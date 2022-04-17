@@ -1,0 +1,12 @@
+{
+    "name": "Stack Overflow Banner Remover",
+    "version": "0.1.0",
+    "description": "Automatically hide the banner that reminds you to upvote questions and answers",
+    "content_scripts": [
+        {
+            "matches": ["https://stackoverflow.com/*", "https://askubuntu.com/*", "https://*.stackexchange.com/*"],
+            "css": ["styles.css"]
+        }
+    ],
+    "manifest_version": 3
+}
